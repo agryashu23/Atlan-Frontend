@@ -1,6 +1,4 @@
-/* src/components/RegistrationForm.css */
-
-.registration-container {
+/* .registration-container {
     max-width: 650px;
     margin: 50px auto;
     font-family: 'Arial', sans-serif;
@@ -81,7 +79,7 @@
     height: auto;
 }
   .image-container-register {
-      order: -1; /* Show the image above the form on small screens */
+      order: -1; 
       margin-bottom: 20px;
   }
-}
+} */

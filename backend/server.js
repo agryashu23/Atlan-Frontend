@@ -28,7 +28,7 @@ cloudinary.config({
   secure: true,
 });
 
-app.post('/api/model',async (req, res) => {
+app.post('/api/model',async (req, res,next) => {
   const { data ,valueData} = req.body; 
   let options;
   if(valueData==="objectt"){
@@ -48,17 +48,15 @@ app.post('/api/model',async (req, res) => {
     res.json(response.data);
   } catch (error) {
     next(error);
-    // res.status(500).json({ error: error.message });
   }
 });
 
-app.post('/api/update-model', async (req, res) => {
+app.post('/api/update-model', async (req, res,next) => {
   const newModelData = req.body.data;
   const filePath = 'ModelsData.json';
   const owner = 'agryashu23';
   const repo = 'Atlan-Frontend';
   const branch = 'master'; 
-
   const token = process.env.GITHUB_TOKEN;
   const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
 

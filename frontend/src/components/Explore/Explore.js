@@ -35,8 +35,8 @@ const Explore = () => {
    
   },[needRerender])
 
-  if (data) {
-    return <Error/>; 
+  if (!data) {
+    return <Loading/>; 
   }
 
   const onDragStart = (e) => {

@@ -56,7 +56,7 @@ const CreateModelCard = () => {
  
 
   const showAlert = () => {
-    showModal(false);
+    setShowModal(false);
     alert("Some error occured, Please try again");
     setNeedRerender(true); 
   };

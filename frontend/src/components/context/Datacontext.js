@@ -12,7 +12,7 @@ export const GitHubDataProvider = ({ children }) => {
   const fetchData = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch('https://raw.githubusercontent.com/agryashu23/Atlan-Frontned/main/ModelsData.json');
+      const response = await fetch('https://raw.githubusercontent.com/agryashu23/Atlan-Frontend/master/ModelsData.json');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
