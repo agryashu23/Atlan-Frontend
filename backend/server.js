@@ -56,8 +56,8 @@ app.post('/api/update-model', async (req, res) => {
   const newModelData = req.body.data;
   const filePath = 'ModelsData.json';
   const owner = 'agryashu23';
-  const repo = 'Atlan-Frontned';
-  const branch = 'main'; 
+  const repo = 'Atlan-Frontend';
+  const branch = 'master'; 
 
   const token = process.env.GITHUB_TOKEN;
   const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
