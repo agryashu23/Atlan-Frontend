@@ -1,0 +1,134 @@
+/* src/App.css */
+
+.model-container {
+  margin: 90px auto;
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.card-content {
+  display: flex;
+  padding: 20px;
+}
+
+.details-section {
+  width: 40%;
+  padding-right: 20px; 
+}
+
+.execution-section {
+  width: 60%; 
+}
+
+.model-section.card, .model-output.card {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+.image-upload-container-create {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  align-items: center;
+  height: 150px; 
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.model-title-detail {
+  color: #007bff;
+  font-size: 28px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #f8f9fa;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.code-frame {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.try-model-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Topup CSS */
+
+.model-output {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: calc(5%);
+  width: 90%;
+}
+.modal-content {
+  margin-top: 20%;
+  align-items: center;
+}
+
+.modal-header, .modal-body {
+  text-align: center;
+  align-items: center;
+}
+
+/* Try Model Button CSS */
+
+.submit-button{
+  width: 9.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.text-area-detail{
+  margin-top: 15px;
+}
+.text-area-detail>textarea{
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+.submit-button{
+  margin-top: 10px;
+}
+
+@media(max-width:720px){
+  .card-content{
+  display: block;
+  }
+  .card-body{
+    width: 100%;
+  }
+  .details-section {
+    width: 100%;
+  }
+  
+  .execution-section {
+    width: 100%; 
+  }
+}

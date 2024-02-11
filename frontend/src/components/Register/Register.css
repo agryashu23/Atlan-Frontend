@@ -1,0 +1,87 @@
+/* src/components/RegistrationForm.css */
+
+.registration-container {
+    max-width: 650px;
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif;
+  }
+ 
+  .registration-form {
+    background-color: white;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    padding-bottom: 40px;
+    justify-content: space-between; 
+  }
+  .form-register-block{
+    width: 45%;
+  }
+  .registration-form h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+   
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .register-button:hover {
+    background-color: #0056b3;
+  }
+  .image-container-register{
+    max-width: 50%;
+  }
+  .image-container-register img {
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 850px){
+  .registration-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+ 
+}
+@media (max-width: 768px) {
+  .registration-form {
+      flex-direction: column;
+  }
+
+  .form-register-block, .image-container-register {
+      width: 100%;
+      max-width: none;
+  }
+  .image-container-register img {
+    width: 40%;
+    height: auto;
+}
+  .image-container-register {
+      order: -1; /* Show the image above the form on small screens */
+      margin-bottom: 20px;
+  }
+}
