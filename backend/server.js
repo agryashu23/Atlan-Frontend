@@ -33,14 +33,14 @@ app.post('/api/model',async (req, res,next) => {
   let options;
   if(valueData==="objectt"){
     const imageUrl = await convertBlobUrlToCloudinary(data);
-    options = object_func(imageUrl);
+    options = await object_func(imageUrl);
   }
   else if(valueData==="image"){
     const imageUrl = await convertBlobUrlToCloudinary(data);
-    options = image_func(imageUrl);
+    options = await image_func(imageUrl);
   }
   else{
-    options = text_func(data);
+    options = await text_func(data);
   }
   
   try {
