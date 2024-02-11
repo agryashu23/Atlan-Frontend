@@ -23,7 +23,7 @@ The page load time of the application is **929 ms**. This was measured using the
 ```javascript
 const loadStartTime = window.performance.timing.navigationStart;
 const loadEndTime = window.performance.timing.loadEventEnd;
-const pageLoadTime = loadEndTime - loadStartTime;
+const pageLoadTime = loadEndTime - loadStartTime;```
 
 ### To enhance performance and decrease load times, the following optimizations were implemented:
 
